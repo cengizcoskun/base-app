@@ -25,7 +25,7 @@ class Uniqueness extends \Phalcon\Validation\Validator implements \Phalcon\Valid
      *
      * @throws \Phalcon\Validation\Exception
      */
-    public function validate(Validation $validation, $field)
+    public function validate(\Phalcon\Validation $validation, $field)
     {
         $value = $validation->getValue($field);
         $model = $this->getOption("model");
